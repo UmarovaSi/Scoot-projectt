@@ -1,0 +1,376 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&family=Space+Mono:wght@700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  outline: 0;
+}
+
+body,
+button,
+input {
+  font-family: Lexend Deca, Space Mono;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  max-width: 1110px;
+  margin: 0 auto;
+  padding: 15px;
+}
+
+.promo--big {
+  max-width: 1560px;
+  margin: 0 auto;
+}
+
+.main-btn {
+  width: 180px;
+  padding: 14px 0;
+  background-color: var(--primary);
+  color: var(--white);
+  font-family: Space Mono;
+  font-size: 15px;
+  line-height: 25px;
+}
+
+p {
+  color: var(--darkgrey);
+  font-family: Lexend Deca;
+  font-size: 15px;
+  line-height: 25px;
+}
+
+.footer--cont {
+  width: 100%;
+  background-color: var(--darkgrey);
+}
+.footer--cont .promo--big {
+  max-width: 1560px;
+  margin: 0 auto;
+  background-image: url("/img/circles.svg");
+  background-repeat: no-repeat;
+  background-position: right bottom;
+}
+.footer--cont .footer--wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 102px 0;
+}
+.footer--cont .footer--wrapper .footer--content h5 {
+  max-width: 415px;
+  color: var(--white);
+  font-family: Space Mono;
+  font-size: 48px;
+  line-height: 48px;
+  letter-spacing: -2.143px;
+}
+.footer--cont .footer--wrapper .footer--aplic {
+  display: flex;
+  -moz-column-gap: 18px;
+       column-gap: 18px;
+}
+
+nav.footer--color {
+  background-color: var(--black);
+}
+
+.nav--block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 22px 0;
+}
+.nav--block .logo--box {
+  display: flex;
+  -moz-column-gap: 58px;
+       column-gap: 58px;
+  align-items: center;
+}
+.nav--block .logo--box .nav-pages ul {
+  display: flex;
+  list-style: none;
+  -moz-column-gap: 32px;
+       column-gap: 32px;
+}
+.nav--block .logo--box .nav-pages ul a {
+  color: var(--grey);
+  font-family: Space Mono;
+  font-size: 15px;
+  line-height: 25px;
+}
+
+.big--container {
+  height: 650px;
+  background-image: url("/img/human-on-the-bike.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header--content {
+  max-width: 500px;
+}
+.header--content h1 {
+  color: var(--white);
+  font-family: Space Mono;
+  font-size: 56px;
+  line-height: 56px;
+  letter-spacing: -2.5px;
+  margin: 153px 0 40px 0;
+}
+.header--content p {
+  max-width: 405px;
+  margin-bottom: 40px;
+  color: var(--white);
+}
+
+.background--container {
+  position: relative;
+  height: 200px;
+  background-image: url("/img/about-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #2F3B59;
+  opacity: 0.75;
+}
+.background--container h1 {
+  margin-top: 72px;
+}
+.background--container img {
+  position: absolute;
+  right: 0;
+  top: 68px;
+}
+
+header.header--about .big--container {
+  position: relative;
+  height: 200px;
+  background-image: url("/img/about-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #2F3B59;
+  opacity: 0.75;
+}
+header.header--about .big--container h1 {
+  margin-top: 72px;
+}
+header.header--about .promo--big {
+  background-image: url("/img/three-circles.png");
+}
+
+.usage {
+  padding: 160px 0 200px 0;
+  width: 100%;
+}
+.usage .usage--app {
+  position: relative;
+}
+.usage .usage--app .line {
+  position: absolute;
+  width: 856px;
+  height: 15px;
+  margin-top: 44.4px;
+  background-color: #E5ECF4;
+  z-index: -1;
+}
+.usage .usage--app .line--img {
+  display: flex;
+  max-width: 856px;
+  justify-content: space-between;
+}
+.usage .usage--content {
+  display: flex;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+}
+.usage .usage--content .usage--content-block h3 {
+  font-family: Space Mono;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: -1.071px;
+  margin: 27px 0 40px 0;
+}
+.usage .usage--content .usage--content-block p {
+  color: var(--grey);
+}
+
+.promo {
+  width: 100%;
+}
+.promo .promo--box {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 220px;
+       column-gap: 220px;
+}
+.promo .promo--box .promo--content h4 {
+  color: #495567;
+  font-family: Space Mono;
+  font-size: 48px;
+  line-height: 48px;
+  letter-spacing: -2.143px;
+}
+.promo .promo--box .promo--content p {
+  color: var(--grey);
+  margin: 24px 0 40px 0;
+}
+.promo .promo--box .promo--img {
+  position: relative;
+}
+.promo .promo--box .promo--img .promo--arrow {
+  position: absolute;
+  bottom: 0;
+  left: -58px;
+}
+.promo .promo--box .promo--img .promo--arrow.change {
+  top: 0;
+  left: -240px;
+}
+.promo .promo--box .promo--img .promo--arrow.right {
+  top: 105px;
+  left: 320px;
+}
+
+.promo--big {
+  background-image: url("/img/half-circle.png");
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.promo--big.circle--change {
+  background-image: url("/img/half-circle-left.png");
+  background-repeat: no-repeat;
+  background-position: left;
+  padding: 160px 0 139px 0;
+}
+
+.promo--big.third {
+  padding-bottom: 200px;
+}
+
+.promo--box.about--pages {
+  padding: 120px 0 120px 0;
+}
+
+.promo--big.circle--change.about--second {
+  padding: 0;
+}
+
+.our--values {
+  padding: 120px 0;
+}
+.our--values h5 {
+  color: var(--darkgrey);
+  text-align: center;
+  font-family: Space Mono;
+  font-size: 48px;
+  line-height: 48px;
+  letter-spacing: -2.143px;
+  margin-bottom: 103px;
+}
+.our--values .our--values-box {
+  display: flex;
+}
+.our--values .our--values-box .step--img {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.our--values .our--values-box .step--img .step--circles-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: auto;
+  width: 96px;
+  height: 96px;
+  background-color: var(--primary);
+  border-radius: 100%;
+  transform: translateY(-50%);
+  color: var(--darkgrey);
+  text-align: center;
+  font-family: Space Mono;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: -1.071px;
+}
+.our--values .our--values-box .step--content {
+  max-width: 350px;
+  text-align: center;
+}
+.our--values .our--values-box .step--content h6 {
+  color: var(--darkgrey);
+  font-family: Space Mono;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: -1.071px;
+}
+.our--values .our--values-box .step--content p {
+  color: var(--grey);
+  text-align: center;
+  font-family: Lexend Deca;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25px;
+  margin-top: 27px;
+}
+
+.faqs {
+  padding-bottom: 96px;
+}
+.faqs h5 {
+  color: var(--darkgrey);
+  text-align: center;
+  font-family: Space Mono;
+  font-size: 48px;
+  line-height: 48px;
+  letter-spacing: -2.143px;
+  margin-bottom: 64px;
+}
+.faqs .faqs--box {
+  display: flex;
+  margin-bottom: 64px;
+}
+.faqs .faqs--box .faqs--content {
+  display: flex;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+}
+.faqs .faqs--box .faqs--content .content--heading h5 {
+  text-align: start;
+  font-size: 40px;
+  letter-spacing: -1.786px;
+}
+.faqs .faqs--box .content--text {
+  max-width: 730px;
+  padding: 32px 40px;
+  background-color: #F2F5F9;
+  margin-bottom: 16px;
+}
+.faqs .faqs--box .content--text h6 {
+  color: #495567;
+  font-family: Space Mono;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: -1.071px;
+  margin-bottom: 24px;
+}
+.faqs .faqs--box .content--text .content--text-icon {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+:root {
+  --primary:#FCB72B;
+  --grey: #939CAA;
+  --white:#FFFFFF;
+  --darkgrey:#495567;
+  --black: #333A44;
+}/*# sourceMappingURL=style.css.map */

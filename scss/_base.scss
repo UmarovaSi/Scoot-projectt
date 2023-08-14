@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&family=Space+Mono:wght@700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: 0;
+    
+}
+body,
+button,
+input {
+    font-family: Lexend Deca, Space Mono;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+.container {
+    max-width: 1110px;
+    // background-color: pink;
+    margin: 0 auto;
+    padding: 15px;
+}
+.promo--big {
+    max-width: 1560px;
+    margin: 0 auto;
+}
+.main-btn {
+    width: 180px;
+    padding: 14px 0;
+    background-color: var(--primary);
+    color: var(--white);
+    font-family: Space Mono;
+    font-size: 15px;
+    line-height: 25px;
+}
+p {
+    color: var(--darkgrey);
+    font-family: Lexend Deca;
+    font-size: 15px;
+    line-height: 25px; 
+}
