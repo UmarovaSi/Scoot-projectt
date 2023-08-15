@@ -199,6 +199,10 @@
                 justify-content: space-between;
             }
         }
+        .content--text:hover {
+            background-color: #FFF4DF;
+            cursor: pointer;
+        }
     }
 
 }
@@ -283,4 +287,28 @@
         }
     }
     
+}
+.tech--support {
+    width: 100%;
+    padding: 0 0 120px 0;
+    .tech--support-wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        h3 {
+            max-width: 351px;
+            color: var(--darkgrey);
+            font-family: Space Mono;
+            font-size: 48px;
+            line-height: 48px; 
+            letter-spacing: -2.143px;
+        }
+        p {
+            max-width: 445px;
+            color: var(--grey);
+            font-family: Lexend Deca;
+            font-size: 15px;
+            line-height: 25px; 
+        }
+    }
 }

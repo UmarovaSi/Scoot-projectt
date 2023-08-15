@@ -39,6 +39,13 @@ a {
   line-height: 25px;
 }
 
+.main-btn:hover {
+  background-color: inherit;
+  border: 1px solid var(--primary);
+  color: var(--primary);
+  cursor: pointer;
+}
+
 p {
   color: var(--darkgrey);
   font-family: Lexend Deca;
@@ -79,6 +86,10 @@ p {
 
 nav.footer--color {
   background-color: var(--black);
+}
+nav.footer--color .nav--social img svg:hover {
+  color: #E5ECF4;
+  cursor: pointer;
 }
 
 .nav--block {
@@ -380,6 +391,10 @@ header.header--about .big--container.careers {
   align-items: center;
   justify-content: space-between;
 }
+.faqs .faqs--box .content--text:hover {
+  background-color: #FFF4DF;
+  cursor: pointer;
+}
 
 .vacancy {
   width: 100%;
@@ -462,6 +477,31 @@ header.header--about .big--container.careers {
   background-color: var(--primary);
   transform: rotate(45deg);
   margin-bottom: -15px;
+}
+
+.tech--support {
+  width: 100%;
+  padding: 0 0 120px 0;
+}
+.tech--support .tech--support-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.tech--support .tech--support-wrapper h3 {
+  max-width: 351px;
+  color: var(--darkgrey);
+  font-family: Space Mono;
+  font-size: 48px;
+  line-height: 48px;
+  letter-spacing: -2.143px;
+}
+.tech--support .tech--support-wrapper p {
+  max-width: 445px;
+  color: var(--grey);
+  font-family: Lexend Deca;
+  font-size: 15px;
+  line-height: 25px;
 }
 
 :root {

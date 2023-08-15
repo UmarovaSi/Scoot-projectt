@@ -32,4 +32,12 @@
 }
 nav.footer--color{
     background-color: var(--black);
+    .nav--social {
+        img {
+            svg:hover {
+                color: #E5ECF4;
+                cursor: pointer;
+            }
+        }
+    }
 }
