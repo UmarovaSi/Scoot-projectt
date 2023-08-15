@@ -8,6 +8,9 @@
         display: flex;
         column-gap: 58px;
         align-items: center;
+        .menu--line {
+            display: none;
+        }
         .nav-pages {
             ul{
                 display: flex;
@@ -67,6 +70,13 @@
     }
 }
 header.header--about{
+    .nav--block {
+        .logo--box {
+            .menu--line {
+                display: none;
+            }
+        }
+    }
     .big--container {
         // position: relative;
         height: 200px;
@@ -87,5 +97,82 @@ header.header--about{
     }
     .big--container.careers {
         background-image: url("/img/careers-bg.png");
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .header--content {
+        max-width: max-content;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        h1 {
+            text-align: center;
+        }
+        p {
+            max-width: max-content;
+            text-align: center;
+        }
+    }
+}
+@media only screen and (max-width:632px) {
+    nav {
+        .nav--block {
+            .logo--box {
+                display: flex;
+                align-items: center;
+                column-gap: 98px;
+                .menu--line {
+                    display: block;
+                }
+                .nav-pages {
+                    display: none;
+                }
+                .logo {
+                    img {
+                        width: 75px;
+                        height: 20px;
+                    }
+                }
+                
+            }
+        }
+    }
+    nav.footer--color{
+        .nav--block {
+            align-items: center;
+            flex-direction: column;
+            padding: 64px 0 88px 0;
+            row-gap: 81px;
+            .nav-pages {
+                display: block;
+                ul {
+                    flex-direction: column;
+                    align-items: center;
+                    row-gap: 16px;
+                }
+            }
+            .logo--box {
+                flex-direction: column;
+                row-gap: 41px;
+            }
+        }
+    }
+    .main-btn {
+        display: none;
+    }
+    .container {
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+    header.header--about {
+        .nav--block {
+            .logo--box {
+                .menu--line {
+                    display: block;
+                }
+            }
+        }
     }
 }

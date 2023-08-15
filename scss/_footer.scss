@@ -41,3 +41,42 @@ nav.footer--color{
         }
     }
 }
+
+@media only screen and (max-width:900px) {
+    .footer--cont {
+        .footer--wrapper {
+            padding: 62px 0;
+            flex-direction: column;
+            row-gap: 40px;
+            .footer--content {
+                h5 {
+                    text-align: center;
+                    max-width: 457px;
+                }
+            }
+        }
+        .footer--aplic {
+            .appstore {
+                width: 113px;
+                height: 40px;
+            }
+            .google-play {
+                width: 130px;
+                height: 40px;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 626px) {
+    .footer--cont {
+        .footer--wrapper {
+            .footer--content {
+                h5 {
+                    font-size: 32px;
+                    max-width: 311pxgi;
+                }
+            }
+        }
+    
+    }
+}
