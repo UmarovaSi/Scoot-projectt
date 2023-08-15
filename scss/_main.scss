@@ -93,6 +93,9 @@
 }
 
 
+.our--values.careers--page {
+    padding: 0 0 120px;
+}
 .our--values {
     padding: 120px 0;
     h5 {
@@ -198,4 +201,33 @@
         }
     }
 
+}
+.vacancy {
+    width: 100%;
+    padding-bottom: 160px;
+    .vacancy--box {
+        display: flex;
+        flex-direction: column;
+        row-gap: 24px;
+        .vacancy--rectangle {
+            display: flex;
+            padding: 32px 64px 32px 40px;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #F2F5F9;
+            h6 {
+                color: var(--darkgrey);
+                font-family: Space Mono;
+                font-size: 24px;
+                line-height: 28px; 
+                letter-spacing: -1.071px;
+            }
+            p {
+                color: var(--darkgrey);
+                font-family: Lexend Deca;
+                font-size: 15px;
+                line-height: 25px;
+            }
+        }
+    }
 }

@@ -105,6 +105,11 @@ nav.footer--color {
   font-size: 15px;
   line-height: 25px;
 }
+.nav--block .nav--social {
+  display: flex;
+  -moz-column-gap: 15px;
+       column-gap: 15px;
+}
 
 .big--container {
   height: 650px;
@@ -149,19 +154,24 @@ nav.footer--color {
 }
 
 header.header--about .big--container {
-  position: relative;
   height: 200px;
   background-image: url("/img/about-bg.png");
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: #2F3B59;
-  opacity: 0.75;
 }
 header.header--about .big--container h1 {
   margin-top: 72px;
 }
 header.header--about .promo--big {
   background-image: url("/img/three-circles.png");
+}
+header.header--about .big--two {
+  height: 200px;
+  background-color: #2F3B59;
+  opacity: 0.75;
+}
+header.header--about .big--container.careers {
+  background-image: url("/img/careers-bg.png");
 }
 
 .usage {
@@ -260,6 +270,10 @@ header.header--about .promo--big {
 
 .promo--big.circle--change.about--second {
   padding: 0;
+}
+
+.our--values.careers--page {
+  padding: 0 0 120px;
 }
 
 .our--values {
@@ -365,6 +379,36 @@ header.header--about .promo--big {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.vacancy {
+  width: 100%;
+  padding-bottom: 160px;
+}
+.vacancy .vacancy--box {
+  display: flex;
+  flex-direction: column;
+  row-gap: 24px;
+}
+.vacancy .vacancy--box .vacancy--rectangle {
+  display: flex;
+  padding: 32px 64px 32px 40px;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #F2F5F9;
+}
+.vacancy .vacancy--box .vacancy--rectangle h6 {
+  color: var(--darkgrey);
+  font-family: Space Mono;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: -1.071px;
+}
+.vacancy .vacancy--box .vacancy--rectangle p {
+  color: var(--darkgrey);
+  font-family: Lexend Deca;
+  font-size: 15px;
+  line-height: 25px;
 }
 
 :root {

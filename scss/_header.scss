@@ -22,6 +22,10 @@
             }
         }
     }
+    .nav--social {
+        display: flex;
+        column-gap: 15px;
+    }
 }
 .big--container {
     height: 650px;
@@ -64,18 +68,24 @@
 }
 header.header--about{
     .big--container {
-        position: relative;
+        // position: relative;
         height: 200px;
         background-image: url("/img/about-bg.png");
         background-repeat: no-repeat;
         background-size: cover;
-        background-color: #2F3B59;
-        opacity: 0.75;
         h1 {
             margin-top: 72px;
         }
     }
     .promo--big {
         background-image: url("/img/three-circles.png");
+    }
+    .big--two {
+        height: 200px;
+        background-color: #2F3B59;
+        opacity: 0.75;
+    }
+    .big--container.careers {
+        background-image: url("/img/careers-bg.png");
     }
 }
