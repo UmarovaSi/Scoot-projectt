@@ -59,23 +59,22 @@
                 margin: 24px 0 40px 0;
             }
         }
-        .promo--img {
-            background-color: pink;
-            position: relative;
-            .promo--arrow {
-                position: absolute;
-                bottom: 0;
-                left: -57px;
-            }
-            .promo--arrow.change {
-                top: 0;
-                left: -240px;
-            }
-            .promo--arrow.right {
-                top:105px;
-                left: 320px;
-            }
-        }
+        // .promo--img {
+        //     // .promo--arrow {
+        //     //     display: none;
+                
+        //     //     bottom: 0;
+        //     //     left: -57px;
+        //     // }
+        //     .promo--arrow.change {
+        //         top: 0;
+        //         left: -240px;
+        //     }
+        //     .promo--arrow.right {
+        //         top:105px;
+        //         left: 320px;
+        //     }
+        // }
     }
 }
 .promo--big {
@@ -235,12 +234,14 @@
                 font-size: 24px;
                 line-height: 28px; 
                 letter-spacing: -1.071px;
+                text-align: center;
             }
             p {
                 color: var(--darkgrey);
                 font-family: Lexend Deca;
                 font-size: 15px;
                 line-height: 25px;
+                text-align: center;
             }
         }
     }
@@ -294,6 +295,33 @@
             background-color: var(--primary);
             transform: rotate(45deg);
             margin-bottom: -15px;
+        }
+    }
+    .map--mobile--box {
+        display: none;
+        .map--mobile {
+            max-width: 700px;
+            padding-top: 40px;
+            display: flex;
+            flex-direction: column;
+            row-gap: 16px;
+            justify-content: center;
+            align-items: center;
+            .map--city--mobile {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 311px;
+                height: 72px;
+                background: rgba(252, 183, 43, 0.15);
+                p {
+                    color: #495567;
+                    font-family: Space Mono;
+                    font-size: 24px;
+                    line-height: 28px;
+                    letter-spacing: -1.071px;
+                }
+            }
         }
     }
     
@@ -387,14 +415,33 @@
     }
 }
 
-// @media only screen and (max-width: 1564px){
-//     .promo {
-//         .promo--box {
-//             // flex-direction: column-reverse;
-//         }
-//     }
+@media only screen and (max-width: 1305px){
+    .promo {
+        .promo--box {
+            flex-direction: column-reverse;
+            row-gap: 56px;
+            .promo--content {
+                text-align: center;
+                // h4 {
+                //     max-width: 445px;
+                //     color: #495567;
+                //     font-family: Space Mono;
+                //     font-size: 48px;
+                //     line-height: 48px; 
+                //     letter-spacing: -2.143px;
+                // }
+                // p {
+                //     max-width: 445px;
+                //     color: var(--grey);
+                //     margin: 24px 0 40px 0;
+                // }
+            }
+        }
+    }
+}
+    
 
-// }
+
 
 @media only screen  and (max-width: 1090px) {
     .our--values {
@@ -437,5 +484,123 @@
             }
         }
     
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .vacancy {
+        .vacancy--box {
+            .vacancy--rectangle {
+                padding: 32px;
+                height: 190px;
+                flex-direction: column;
+                justify-content: center;
+                row-gap: 16px;
+                h6 {
+                    font-size: 18px;
+                    line-height: 24px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:1120px) {
+    .map {
+        .world--map {
+            height: 337px;
+            .map--city-block {
+                top: 52px;
+                left: 98px;
+                .map--city {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 120px;
+                    height: 40px;
+                    p {
+                        text-align: center;
+                        font-size: 13px;
+                        line-height: 28px;
+                        letter-spacing: -0.58px;
+                    }
+                }
+            }
+            .map--city-block.city--two {
+                top: 18px;
+                left: 243px;
+            }
+            .map--city-block.city--three {
+                top: 78px;
+                left: 530px;
+            }
+            .map--city-block.city--four {
+                top: 251px;
+                left: 480px;
+            }
+            .city--square {
+                bottom: 5px;
+                left: 45px;
+                width: 20px;
+                height: 20px;
+            }
+        }
+        
+    }
+    .tech--support {
+        .tech--support-wrapper {
+            flex-direction: column;
+            align-items: center;
+            row-gap: 40px;
+            h3 {
+                max-width: 457px;
+                text-align: center;
+            }
+            p {
+                max-width: 573px;
+                text-align: center;
+            }
+        }
+    }
+}
+@media only screen and (max-width:710px) {
+    .map {
+        .world--map {
+            height: 152px;
+            background-image: url("/img/map-mobile.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+            .map--city-block {
+                position: absolute;
+                top: 33px;
+                left: 67px;
+                .map--city {
+                    width: 16px;
+                    height: 16px;
+                    border-radius: 50%;
+                    p {
+                        display: none;
+                    }
+                }
+            }
+            .map--city-block.city--two {
+                top: 22px;
+                left: 132px;
+            }
+            .map--city-block.city--three {
+                top: 41px;
+                left: 259px;
+            }
+            .map--city-block.city--four {
+                top: 87px;
+                left: 237px;
+            }
+            .city--square {
+                display: none;
+            }
+        }
+        .map--mobile--box {
+            display: block;
+        }
     }
 }

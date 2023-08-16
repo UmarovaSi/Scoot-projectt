@@ -141,6 +141,9 @@ header.header--about{
                 
             }
         }
+        .main-btn {
+            display: none;
+        }
     }
     nav.footer--color{
         .nav--block {
@@ -161,9 +164,6 @@ header.header--about{
                 row-gap: 41px;
             }
         }
-    }
-    .main-btn {
-        display: none;
     }
     .container {
         padding-left: 32px;
