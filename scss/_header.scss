@@ -6,6 +6,8 @@
     padding: 22px 0;
     .logo--box {
         display: flex;
+        padding-left: 40px;
+        padding-right: 40px;
         column-gap: 58px;
         align-items: center;
         .menu--line {
@@ -38,6 +40,7 @@
 }
 .header--content{
     max-width: 500px;
+    padding-left: 40px;
     h1 {
         color:var(--white);
         font-family: Space Mono;
@@ -116,13 +119,13 @@ header.header--about{
         }
     }
 }
-@media only screen and (max-width:632px) {
+@media only screen and (max-width:689px) {
     nav {
         .nav--block {
             .logo--box {
                 display: flex;
                 align-items: center;
-                column-gap: 98px;
+                // column-gap: 98px;
                 .menu--line {
                     display: block;
                 }
@@ -173,6 +176,9 @@ header.header--about{
                     display: block;
                 }
             }
+        }
+        .promo--big {
+            background-image: none;
         }
     }
 }

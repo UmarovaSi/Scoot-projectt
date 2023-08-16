@@ -114,7 +114,7 @@ nav.footer--color .nav--social img svg:hover {
 @media only screen and (max-width: 626px) {
   .footer--cont .footer--wrapper .footer--content h5 {
     font-size: 32px;
-    max-width: 311pxgi;
+    max-width: 311px;
   }
 }
 .nav--block {
@@ -125,6 +125,8 @@ nav.footer--color .nav--social img svg:hover {
 }
 .nav--block .logo--box {
   display: flex;
+  padding-left: 40px;
+  padding-right: 40px;
   -moz-column-gap: 58px;
        column-gap: 58px;
   align-items: center;
@@ -159,6 +161,7 @@ nav.footer--color .nav--social img svg:hover {
 
 .header--content {
   max-width: 500px;
+  padding-left: 40px;
 }
 .header--content h1 {
   color: var(--white);
@@ -234,12 +237,10 @@ header.header--about .big--container.careers {
     text-align: center;
   }
 }
-@media only screen and (max-width: 632px) {
+@media only screen and (max-width: 689px) {
   nav .nav--block .logo--box {
     display: flex;
     align-items: center;
-    -moz-column-gap: 98px;
-         column-gap: 98px;
   }
   nav .nav--block .logo--box .menu--line {
     display: block;
@@ -278,6 +279,9 @@ header.header--about .big--container.careers {
   }
   header.header--about .nav--block .logo--box .menu--line {
     display: block;
+  }
+  header.header--about .promo--big {
+    background-image: none;
   }
 }
 .usage {
@@ -447,7 +451,7 @@ header.header--about .big--container.careers {
 }
 
 .faqs {
-  padding-bottom: 96px;
+  padding: 0 40px 96px 40px;
 }
 .faqs h5 {
   color: var(--darkgrey);
@@ -460,6 +464,8 @@ header.header--about .big--container.careers {
 }
 .faqs .faqs--box {
   display: flex;
+  align-items: center;
+  justify-content: center;
   margin-bottom: 64px;
 }
 .faqs .faqs--box .faqs--content {
@@ -468,6 +474,7 @@ header.header--about .big--container.careers {
        column-gap: 30px;
 }
 .faqs .faqs--box .faqs--content .content--heading h5 {
+  max-width: 350px;
   text-align: start;
   font-size: 40px;
   letter-spacing: -1.786px;
@@ -659,6 +666,35 @@ header.header--about .big--container.careers {
   }
   .usage .usage--block .usage--content .usage--content-block h3 {
     font-size: 20px;
+  }
+}
+@media only screen and (max-width: 1090px) {
+  .our--values .our--values-box {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 55px;
+  }
+  .our--values .our--values-box .step--content {
+    max-width: 457px;
+  }
+}
+@media only screen and (max-width: 620px) {
+  .our--values h5 {
+    font-size: 32px;
+    margin-bottom: 64px;
+  }
+}
+@media only screen and (max-width: 950px) {
+  .faqs {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .faqs .faqs--box .faqs--content {
+    display: flex;
+    -moz-column-gap: 30px;
+         column-gap: 30px;
+    flex-direction: column;
+    align-items: center;
   }
 }
 :root {
